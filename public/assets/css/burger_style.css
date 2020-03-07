@@ -18,15 +18,13 @@
   #newburger {
     color: #5c5c5c;
   }
-  #leftside {
+  #left {
     background-color: #cb4154;
-    color: white;
+    color: #ffffff;
     text-align: center;
-    font-size: 1.3em;
   }
-  #rightside {
+  #right {
     background-color: #77dd77;
-    color: white;
+    color: #ffffff;
     text-align: center;
-    font-size: 1.3em;
   }

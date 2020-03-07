@@ -1,10 +1,8 @@
 <div class="container">
-    <div class="jumbotron">
         <div class="heading mx-auto">
             <img class="burgerpic" src ="burger.png">
             <h1>Add a burger</h1>
         </div>
-        <panel>
             <form class="create-form">
                 <div class="form-group">
                     <input type="text" id="newburger" name="burger">
@@ -13,12 +11,10 @@
                     </button>
                 </div> 
             </form>
-        </panel>
-    </div>
     <div class="row">
         <div class="col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading" id="leftside"><strong>Burger List</strong>
+                <div class="panel-heading" id="left"><strong>Burger List</strong>
                 </div>
                 <div class="panel-body">
                     <ul>
@@ -36,14 +32,14 @@
         </div>
         <div class="col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading" id="rightside"><strong>Devoured List</strong>
+                <div class="panel-heading" id="right"><strong>Devoured List</strong>
                 </div>
                 <div class="panel-body">
                     <ul>
                         {{#each burgers}}
                         {{#if devoured}}
                         <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
-                        <button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}"
+                        <button type="button" class="deleteburger btn btn-danger" id="deletebutton" data-id="{{this.id}}"
                             data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
                         <hr>
                         {{/if}}

@@ -34,7 +34,7 @@ $(function() {
       });
     });
   
-    $(".trashburger").on("click", function(event) {
+    $(".deleteburger").on("click", function(event) {
       event.preventDefault();
       var id = $(this).data("id");
         $.ajax({
